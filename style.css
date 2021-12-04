@@ -13,13 +13,45 @@
     box-sizing: border-box;
 }
 
-body {
-    background: url(backgroung.png) center center no-repeat;
+html {
+    background-color: black;
+}
+
+.bg {
+    background: url(13492.gif) center center no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
-    
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    filter: blur(10px);
+
 }
+
+.bg-2 {
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    opacity: 0.48;
+    top: 0;
+    z-index: -2;
+}
+
+.bg-3 {
+    background: url(Rectangle.png) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+
+}
+
+
 
 h1 {
     font-family: Akzidenz bold ex;
@@ -30,8 +62,6 @@ h1 {
     -webkit-text-fill-color: transparent;
     margin: 0 auto;
     padding-bottom: 8px;
-
-
 }
 
 .small-text {
@@ -103,7 +133,7 @@ main {
 .icons {
     position: fixed;
     bottom: 56px;
-    
+
 }
 
 .icons a {
@@ -126,9 +156,11 @@ main {
     main p {
         font-size: 13.33px;
     }
+
     .button a {
-    font-size: 13.33px;
+        font-size: 13.33px;
     }
+
     .icons a img {
         width: 18px;
     }
