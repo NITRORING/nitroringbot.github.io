@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Akzidenz bold ex;
+    src: url(fonts/akzidenzgroteskpro_boldex.otf);
+}
+
+@font-face {
+    font-family: Akzidenz md;
+    src: url(fonts/akzidenzgroteskpro_md.ttf);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(backgroung.png) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    font-family: Akzidenz bold ex;
+    font-size: 57.33px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.48) 100%);
+    display: inline-block;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 auto;
+    padding-bottom: 8px;
+
+
+}
+
+.small-text {
+    margin: 0 auto;
+    padding-bottom: 8px;
+
+}
+
+.small-text p {
+    color: white;
+    font-size: 11.11px;
+    letter-spacing: 0.15em;
+    font-family: Akzidenz md;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    display: inline-block;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.24) 50%, rgba(255, 255, 255, 0.08) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+main p {
+    color: white;
+    font-family: Akzidenz md;
+    font-size: 16px;
+    display: inline-block;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.48) 50%, rgba(255, 255, 255, 0.24) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.container {
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.button {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    border: solid 1px rgba(255, 255, 255, 0.08);
+    padding: 16px 0px;
+    display: inline-block;
+
+}
+
+.button a {
+    color: white;
+    font-family: Akzidenz md;
+    font-size: 16px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.48) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 16px 32px;
+    white-space: nowrap;
+}
+
+.icons {
+    position: fixed;
+    bottom: 56px;
+    
+}
+
+.icons a {
+    margin: 0px 8px;
+}
+
+.icons a img {
+    opacity: 0.48;
+}
+
+@media screen and (max-width: 520px) {
+    h1 {
+        font-size: 39.81px;
+    }
+
+    .small-text p {
+        font-size: 9.26px;
+    }
+
+    main p {
+        font-size: 13.33px;
+    }
+    .button a {
+    font-size: 13.33px;
+    }
+    .icons a img {
+        width: 18px;
+    }
+}
