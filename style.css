@@ -18,7 +18,7 @@ html {
 }
 
 .bg {
-    background: url(13492.gif) center center no-repeat;
+    background: url(gif/fade-saber.gif) center center no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -41,7 +41,7 @@ html {
 }
 
 .bg-3 {
-    background: url(Rectangle.png) center center no-repeat;
+    background: url(images/Rectangle.png) center center no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -50,8 +50,6 @@ html {
     z-index: -2;
 
 }
-
-
 
 h1 {
     font-family: Akzidenz bold ex;
