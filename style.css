@@ -1,11 +1,11 @@
 @font-face {
-    font-family: Akzidenz bold ex;
-    src: url(fonts/akzidenzgroteskpro_boldex.otf);
+    font-family: AkzidenzGroteskPro-BoldEx;
+    src: url(fonts/AkzidenzGroteskPro-BoldEx.ttf);
 }
 
 @font-face {
-    font-family: Akzidenz md;
-    src: url(fonts/akzidenzgroteskpro_md.ttf);
+    font-family: AkzidenzGroteskPro-Md;
+    src: url(fonts/AkzidenzGroteskPro-Md.ttf);
 }
 
 * {
@@ -17,42 +17,14 @@ html {
     background-color: black;
 }
 
-.bg {
-    background: url(gif/fade-saber.gif) center center no-repeat;
+body {
+    background: url(images/backgroung.png) center center no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    z-index: -2;
-    filter: blur(15px);
-
-}
-
-.bg-2 {
-    background-color: black;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    opacity: 0.48;
-    top: 0;
-    z-index: -2;
-}
-
-.bg-3 {
-    background: url(images/Rectangle.png) center center no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    z-index: -2;
-
 }
 
 h1 {
-    font-family: Akzidenz bold ex;
+    font-family: AkzidenzGroteskPro-BoldEx;
     font-size: 57.33px;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.48) 100%);
     display: inline-block;
@@ -65,14 +37,13 @@ h1 {
 .small-text {
     margin: 0 auto;
     padding-bottom: 8px;
-
 }
 
 .small-text p {
     color: white;
     font-size: 11.11px;
     letter-spacing: 0.15em;
-    font-family: Akzidenz md;
+    font-family: AkzidenzGroteskPro-Md;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     display: inline-block;
@@ -84,7 +55,7 @@ h1 {
 
 main p {
     color: white;
-    font-family: Akzidenz md;
+    font-family: AkzidenzGroteskPro-Md;
     font-size: 16px;
     display: inline-block;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.48) 50%, rgba(255, 255, 255, 0.24) 100%);
@@ -95,7 +66,6 @@ main p {
 }
 
 .container {
-    min-width: 100px;
     display: flex;
     flex-direction: column;
 }
@@ -114,12 +84,11 @@ main {
     border: solid 1px rgba(255, 255, 255, 0.08);
     padding: 16px 0px;
     display: inline-block;
-
 }
 
 .button a {
     color: white;
-    font-family: Akzidenz md;
+    font-family: AkzidenzGroteskPro-Md;
     font-size: 16px;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.48) 100%);
     -webkit-background-clip: text;
@@ -130,8 +99,8 @@ main {
 
 .icons {
     position: fixed;
-    bottom: 56px;
-
+    bottom: 48px;
+    white-space: nowrap;
 }
 
 .icons a {
@@ -142,9 +111,9 @@ main {
     opacity: 0.48;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 768px) {
     h1 {
-        font-size: 39.81px;
+        font-size: 47.78px;
     }
 
     .small-text p {
@@ -155,8 +124,40 @@ main {
         font-size: 13.33px;
     }
 
+    .button {
+        padding: 12px 0;
+    }
+
     .button a {
         font-size: 13.33px;
+        padding: 12px 28px;
+    }
+
+    .icons a img {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 33.18px;
+    }
+
+    .small-text p {
+        font-size: 7.72px;
+    }
+
+    main p {
+        font-size: 11.11px;
+    }
+
+    .button {
+        padding: 9px 0;
+    }
+
+    .button a {
+        font-size: 11.11px;
+        padding: 12px 20px;
     }
 
     .icons a img {
