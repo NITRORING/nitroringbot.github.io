@@ -1,3 +1,3 @@
 # nitroringbot.github.io
 
-Our website
+Our website - nitroringbot.github.io
